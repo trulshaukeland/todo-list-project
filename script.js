@@ -30,8 +30,10 @@ function addTask() {
       <span class="task-text">${taskText}</span>
     </label>
     <span class="due-date">Due: ${dueDate || "No date"}</span>
+    <div>
     <span class="edit-btn">Edit</span>
     <span class="delete-btn">Delete</span>
+    </div>
   `;
 
   listContainer.appendChild(li);
