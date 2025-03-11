@@ -7,36 +7,19 @@
   <body>
     <!-- create a container for the todo list -->
     <div id="todo-container">
-      <!-- todo list header -->
-      <div id="header">
-        <h1>To Do List</h1>
-      </div>
+      <h1>Todo List</h1>
+      <input type="text" id="input-box" placeholder="Add a task..." />
+      <input type="date" id="due-date" />
+      <button id="input-button">Add</button>
 
-      <!-- create input box -->
-      <div id="todo-form">
-        <input
-          type="text"
-          class="input-item"
-          name="input_box"
-          id="input-box"
-          placeholder="Add Task"
-        />
+      <h3>Filter by date:</h3>
+      <input type="date" id="filter-date" />
 
-        <!-- add button -->
-        <button id="input-button" onclick="addTask()">Add</button>
-      </div>
-
-      <!-- task list -->
-      <h2>Task List</h2>
+      <h3>Tasks</h3>
       <ul id="list-container"></ul>
-      <hr />
-      <!-- task list counter -->
-      <div class="counter-container">
-        <div id="task-counters">
-          Completed: <span id="completed-counter">0</span> | Uncompleted:
-          <span id="uncompleted-counter">0</span>
-        </div>
-      </div>
+
+      <h3>Completed: <span id="completed-counter">0</span></h3>
+      <h3>Uncompleted: <span id="uncompleted-counter">0</span></h3>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
